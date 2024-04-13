@@ -287,7 +287,8 @@ img {
   background-color: var(--primary-bg);
 }
 
-.page-footer__logo {
+.page-footer__link {
+  display: block;
   margin-bottom: 16px;
 }
 
