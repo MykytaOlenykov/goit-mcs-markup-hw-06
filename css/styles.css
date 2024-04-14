@@ -19,6 +19,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--primary-text-color);
@@ -504,6 +508,7 @@ img {
 /* Footer */
 
 .page-footer {
+  margin-top: auto;
   padding: 100px 0;
 
   background-color: var(--primary-bg);
