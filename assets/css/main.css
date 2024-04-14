@@ -1,4 +1,6 @@
 :root {
+  --accent-logo-color: #4d5ae5;
+
   --primary-color: #fff;
 
   --primary-text-color: #2e2f42;
@@ -95,6 +97,27 @@ img {
   margin: -1px;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo__prefix {
+  color: var(--accent-logo-color);
+}
+
+.page-header__logo {
+  color: var(--primary-text-color);
+}
+
+.page-footer__logo {
+  color: var(--text-color);
+}
+
 /* Header */
 
 .page-header {
@@ -123,6 +146,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-header__link {
+  display: block;
+
+  text-decoration: none;
 }
 
 .site-nav {
@@ -169,7 +198,8 @@ img {
 }
 
 .hero-section__title {
-  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
+  max-width: 496px;
 
   font-weight: 700;
   font-size: 56px;
@@ -290,6 +320,8 @@ img {
 .page-footer__link {
   display: block;
   margin-bottom: 16px;
+
+  text-decoration: none;
 }
 
 .page-footer__description {
