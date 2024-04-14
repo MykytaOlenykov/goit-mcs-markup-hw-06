@@ -15,7 +15,8 @@
 
   --line-color: #e7e9fc;
 
-  --duration: 300ms;
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -190,7 +191,7 @@ img {
   text-decoration: none;
   color: inherit;
 
-  transition: color var(--duration) linear;
+  transition: color var(--duration) var(--timing-function);
 }
 
 .site-nav__link:hover,
@@ -213,7 +214,7 @@ img {
   border-radius: 2px;
   opacity: 0;
 
-  transition: opacity var(--duration) linear;
+  transition: opacity var(--duration) var(--timing-function);
 }
 
 .site-nav__link:hover::after,
@@ -233,7 +234,7 @@ img {
   text-decoration: none;
   color: var(--secondary-text-color);
 
-  transition: color var(--duration) linear;
+  transition: color var(--duration) var(--timing-function);
 }
 
 .address-list__link:hover,
@@ -280,7 +281,7 @@ img {
 
   cursor: pointer;
 
-  transition: background-color var(--duration) linear;
+  transition: background-color var(--duration) var(--timing-function);
 }
 
 .hero-section__button:hover {
@@ -399,9 +400,10 @@ img {
 
   cursor: pointer;
 
-  transition: color var(--duration) linear,
-    background-color var(--duration) linear, border-color var(--duration) linear,
-    box-shadow var(--duration) linear;
+  transition: color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function),
+    border-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .filter-list__button:hover,
@@ -431,7 +433,7 @@ img {
   text-decoration: none;
   color: inherit;
 
-  transition: box-shadow var(--duration) linear;
+  transition: box-shadow var(--duration) var(--timing-function);
 }
 
 .projects-list__link:hover,
@@ -498,7 +500,7 @@ img {
 
   transform: translateY(100%);
 
-  transition: transform var(--duration) linear;
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .project-overlay__description {
