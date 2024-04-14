@@ -1,5 +1,6 @@
 :root {
   --accent-logo-color: #4d5ae5;
+  --accent-color: #404bbf;
 
   --primary-color: #fff;
 
@@ -9,9 +10,12 @@
 
   --primary-bg: #2e2f42;
   --secondary-bg: #f4f4fd;
-  --primary-button-bg-color: #4d5ae5;
+  --overlay-bg: #4d5ae5;
+  --primary-button-color: #4d5ae5;
 
   --line-color: #e7e9fc;
+
+  --duration: 300ms;
 }
 
 body {
@@ -57,6 +61,10 @@ img {
 
 .section--pt-0 {
   padding-top: 0;
+}
+
+.section--pt-96 {
+  padding-top: 96px;
 }
 
 .section-title {
@@ -123,8 +131,7 @@ img {
 .page-header {
   position: sticky;
   top: 0;
-
-  padding: 24px 0;
+  z-index: 100;
 
   background-color: var(--primary-color);
 }
@@ -135,6 +142,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -1;
 
   width: 100%;
   height: 1px;
@@ -167,13 +175,46 @@ img {
 }
 
 .site-nav__link {
+  position: relative;
+
   display: inline-block;
+  padding: 24px 0;
 
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
+
+  transition: color var(--duration) linear;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link--active {
+  color: var(--accent-color);
+}
+
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+
+  transition: opacity var(--duration) linear;
+}
+
+.site-nav__link:hover::after,
+.site-nav__link--active::after {
+  opacity: 1;
 }
 
 .address-list {
@@ -187,7 +228,16 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-text-color);
+
+  transition: color var(--duration) linear;
 }
+
+.address-list__link:hover,
+.address-list__link:focus {
+  color: var(--accent-color);
+}
+
+/* Studio page */
 
 /* Hero section */
 
@@ -219,12 +269,18 @@ img {
   letter-spacing: 0.04em;
   color: var(--primary-color);
 
-  background-color: var(--primary-button-bg-color);
+  background-color: var(--primary-button-color);
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+
+  transition: background-color var(--duration) linear;
+}
+
+.hero-section__button:hover {
+  background-color: var(--accent-color);
 }
 
 /* Advantages section */
@@ -307,6 +363,142 @@ img {
 
 .person-info__title {
   margin-bottom: 8px;
+}
+
+/* Portfolio page */
+
+/* Projects section */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.filter-list__button {
+  padding: 11px 23px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-button-color);
+
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--line-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: color var(--duration) linear,
+    background-color var(--duration) linear, border-color var(--duration) linear,
+    box-shadow var(--duration) linear;
+}
+
+.filter-list__button:hover,
+.filter-list__button:focus,
+.filter-list__button--active {
+  color: var(--primary-color);
+
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.projects-list__link {
+  position: relative;
+
+  display: block;
+  height: 100%;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: box-shadow var(--duration) linear;
+}
+
+.projects-list__link:hover,
+.projects-list__link:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.projects-list__link:hover .project-overlay,
+.projects-list__link:focus .project-overlay {
+  transform: translateY(0);
+}
+
+.projects-list__link::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--line-color);
+  background-color: var(--primary-color);
+}
+
+.projects-list__thumb {
+  position: relative;
+
+  max-width: 360px;
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+}
+
+.projects-list__img {
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects-list__content {
+  padding: 32px 16px;
+}
+
+.projects-list__title {
+  margin-bottom: 8px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  height: 0;
+
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--overlay-bg);
+
+  transform: translateY(100%);
+
+  transition: transform var(--duration) linear;
+}
+
+.project-overlay__description {
+  color: var(--text-color);
 }
 
 /* Footer */

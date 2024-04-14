@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBSTUDIO</title>
+    <link href="./css/fonts.css" rel="stylesheet" />
+    <link href="./css/modern-normalize.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="site-nav">
+          <a class="page-header__link" href="./index.html">
+            <span class="logo page-header__logo">
+              <span class="logo__prefix">Web</span>Studio
+            </span>
+          </a>
+
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav__link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="site-nav__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="address-list">
+            <li>
+              <a class="address-list__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address-list__link" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--pt-96">
+        <div class="container">
+          <h1 class="visually-hidden">Projects list</h1>
+
+          <ul id="filters" class="filter-list">
+            <li>
+              <button
+                class="filter-list__button filter-list__button--active"
+                type="button"
+                data-filter="all"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-list__button"
+                type="button"
+                data-filter="web-site"
+              >
+                Web site
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-list__button"
+                type="button"
+                data-filter="app"
+              >
+                App
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-list__button"
+                type="button"
+                data-filter="design"
+              >
+                Design
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-list__button"
+                type="button"
+                data-filter="marketing"
+              >
+                Marketing
+              </button>
+            </li>
+          </ul>
+
+          <ul id="projects" class="projects-list">
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-1.jpg"
+                    alt="Banking App Interface Concept"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="description">App</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-2.jpg"
+                    alt="Cashless Payment"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Cashless Payment</h2>
+                  <p class="description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-3.jpg"
+                    alt="Meditation App"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Meditation App</h2>
+                  <p class="description">App</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-4.jpg"
+                    alt="Taxi Service"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Taxi Service</h2>
+                  <p class="description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-5.jpg"
+                    alt="Screen Illustrations"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">
+                    Screen Illustrations
+                  </h2>
+                  <p class="description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-6.jpg"
+                    alt="Online Courses"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Online Courses</h2>
+                  <p class="description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-7.jpg"
+                    alt="Instagram Stories Concept"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-8.jpg"
+                    alt="Organic Food"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Organic Food</h2>
+                  <p class="description">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="projects-list__link">
+                <div class="projects-list__thumb">
+                  <img
+                    class="projects-list__img"
+                    src="./images/projects/img-9.jpg"
+                    alt="Fresh Coffee"
+                  />
+                  <div class="project-overlay">
+                    <p class="description project-overlay__description">
+                      14 Stylish and User-Friendly App Design Concepts · Task
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="projects-list__content">
+                  <h2 class="title projects-list__title">Fresh Coffee</h2>
+                  <p class="description">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="page-footer__link" href="./index.html">
+          <span class="logo page-footer__logo">
+            <span class="logo__prefix">Web</span>Studio
+          </span>
+        </a>
+
+        <p class="description page-footer__description">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
