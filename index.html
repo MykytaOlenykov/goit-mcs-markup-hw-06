@@ -561,6 +561,23 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-box">
+          <p class="description subscribe-box__description">Subscribe</p>
+
+          <input
+            class="subscribe-box__input"
+            type="email"
+            placeholder="E-email"
+            name="email"
+          />
+          <button class="subscribe-box__button" type="button">
+            Subscribe
+            <svg class="subscribe-box__icon">
+              <use href="./images/icons.svg#plane"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
@@ -576,6 +593,88 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <p class="modal__description">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form id="form">
+          <label class="form-field">
+            Name
+            <span class="form-field__inner-container">
+              <input
+                class="form-field__input"
+                name="name"
+                type="text"
+                required
+              />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            Phone
+            <span class="form-field__inner-container">
+              <input
+                class="form-field__input"
+                name="phone"
+                type="tel"
+                required
+              />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            Email
+            <span class="form-field__inner-container">
+              <input
+                class="form-field__input"
+                name="email"
+                type="email"
+                required
+              />
+              <svg class="form-field__icon">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            Comment
+            <span class="form-field__inner-container">
+              <textarea
+                class="form-field__input form-field__input--multiline"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </span>
+          </label>
+
+          <label class="checkbox">
+            <input
+              class="visually-hidden checkbox__visually-hidden"
+              type="checkbox"
+              name="policy"
+              required
+            />
+            <span class="checkbox__inner-container">
+              <svg class="checkbox__icon">
+                <use href="./images/icons.svg#checked"></use>
+              </svg>
+            </span>
+            <span class="checkbox__policy">
+              I accept the terms and conditions of the
+              <a class="checkbox__link" href="#">Privacy Policy</a>
+            </span>
+          </label>
+
+          <button class="submit-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 

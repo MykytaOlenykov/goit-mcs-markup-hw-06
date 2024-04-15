@@ -16,3 +16,11 @@ function closeModal() {
   refs.modal.classList.add("backdrop--is-hidden");
   document.body.style.overflow = "auto";
 }
+
+const formRef = document.querySelector("#form");
+
+formRef.addEventListener("submit", (e) => {
+  e.preventDefault();
+  e.currentTarget.reset();
+  closeModal();
+});
