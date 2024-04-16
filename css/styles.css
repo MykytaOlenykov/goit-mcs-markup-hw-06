@@ -581,9 +581,8 @@ img {
 /* Hero section */
 
 .hero-section {
-  display: none;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 112px 0;
   max-width: 1440px;
 
   background-color: var(--primary-bg);
@@ -592,21 +591,79 @@ img {
       var(--hero-bg-color),
       var(--hero-bg-color)
     ),
-    url("../images/hero/hero-bg.jpg");
+    url("../images/hero/img-mb@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-width: 429px) {
+  .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        var(--hero-bg-color),
+        var(--hero-bg-color)
+      ),
+      url("../images/hero/img-tb@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        var(--hero-bg-color),
+        var(--hero-bg-color)
+      ),
+      url("../images/hero/img-dk@1x.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        var(--hero-bg-color),
+        var(--hero-bg-color)
+      ),
+      url("../images/hero/img-mb@2x.jpg");
+  }
+
+  @media screen and (min-width: 429px) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          var(--hero-bg-color),
+          var(--hero-bg-color)
+        ),
+        url("../images/hero/img-tb@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          var(--hero-bg-color),
+          var(--hero-bg-color)
+        ),
+        url("../images/hero/img-dk@2x.jpg");
+    }
+  }
+}
+
 .hero-section__title {
-  margin: 0 auto 48px auto;
-  max-width: 496px;
+  margin: 0 auto 72px auto;
+  max-width: 320px;
 
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: var(--primary-color);
 }
 
@@ -633,6 +690,27 @@ img {
 .hero-section__button:hover,
 .hero-section__button:focus {
   background-color: var(--primary-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section__title {
+    margin: 0 auto 36px auto;
+
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 107%;
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    padding: 188px 0;
+  }
+
+  .hero-section__title {
+    margin: 0 auto 48px auto;
+  }
 }
 
 /* Advantages section */
