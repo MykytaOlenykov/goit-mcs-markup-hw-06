@@ -88,6 +88,12 @@ img {
   padding: 96px 0;
 }
 
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
 .section--pt-0 {
   padding-top: 0;
 }
@@ -763,6 +769,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1020px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .advantages-list__item {
     flex-basis: calc((100% - 24px * 3) / 4);
@@ -783,9 +795,12 @@ img {
 
 /* Services section */
 
+.services-section {
+  display: none;
+}
+
 .services-list {
   display: flex;
-  display: none;
   gap: 24px;
 }
 
@@ -799,6 +814,12 @@ img {
 
   object-fit: cover;
   object-position: center;
+}
+
+@media screen and (min-width: 1158px) {
+  .services-section {
+    display: block;
+  }
 }
 
 /* Team section */
