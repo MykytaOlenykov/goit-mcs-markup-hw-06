@@ -11,47 +11,132 @@
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="site-nav">
-          <a class="page-header__link" href="./index.html">
-            <span class="logo page-header__logo">
-              <span class="logo__prefix">Web</span>Studio
-            </span>
-          </a>
+        <a class="page-header__link" href="./index.html">
+          <span class="logo page-header__logo">
+            <span class="logo__prefix">Web</span>Studio
+          </span>
+        </a>
 
-          <ul id="site-nav-list" class="site-nav__list">
+        <button
+          class="open-menu-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu button"
+        >
+          <svg class="open-menu-button__icon">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="close-menu-button js-close-menu">
+            <svg class="close-menu-button__icon">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+
+          <nav class="site-nav">
+            <ul id="site-nav-list" class="site-nav__list">
+              <li>
+                <a class="site-nav__link" href="./index.html" data-page="studio"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="site-nav__link"
+                  href="./portfolio.html"
+                  data-page="portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="site-nav__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address>
+            <ul class="address-list">
+              <li>
+                <a class="address-list__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-list__link address-list__link--big"
+                  href="tel:+11(000)111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-list menu-container__social-list">
             <li>
-              <a class="site-nav__link" href="./index.html" data-page="studio"
-                >Studio</a
+              <a
+                class="social-list__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
               >
+                <svg
+                  class="social-list__icon social-list__icon--big"
+                  aria-label="Instagram"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a
-                class="site-nav__link"
-                href="./portfolio.html"
-                data-page="portfolio"
-                >Portfolio</a
+                class="social-list__link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
               >
+                <svg
+                  class="social-list__icon social-list__icon--big"
+                  aria-label="Twitter"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="site-nav__link" href="#">Contacts</a>
+              <a
+                class="social-list__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--big"
+                  aria-label="Facebook"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-list__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg
+                  class="social-list__icon social-list__icon--big"
+                  aria-label="Linkedin"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <address>
-          <ul class="address-list">
-            <li>
-              <a class="address-list__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="address-list__link" href="tel:+11(000)111-11-11"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
 
