@@ -85,8 +85,7 @@ img {
 }
 
 .section {
-  display: none;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .section--pt-0 {
@@ -717,23 +716,18 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
 }
 
 .advantages-list__item {
-  flex-basis: calc((100% - 24px * 3) / 4);
+  flex-basis: 396px;
 }
 
 .advantages-list__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-  width: 100%;
-  height: 112px;
-
-  background-color: var(--secondary-bg);
-  border-radius: 4px;
+  display: none;
 }
 
 .advantages-list__icon {
@@ -745,10 +739,53 @@ img {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1157px) {
+  .advantages-list__description {
+    font-weight: 500;
+  }
+
+  .advantages-list__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    text-transform: capitalize;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    flex-basis: 356px;
+  }
+
+  .advantages-list__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages-list__item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+
+  .advantages-list__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 112px;
+
+    background-color: var(--secondary-bg);
+    border-radius: 4px;
+  }
+}
+
 /* Services section */
 
 .services-list {
   display: flex;
+  display: none;
   gap: 24px;
 }
 
@@ -767,6 +804,8 @@ img {
 /* Team section */
 
 .team-section {
+  display: none;
+
   background-color: var(--secondary-bg);
 }
 
@@ -818,6 +857,8 @@ img {
 
 .customers-list {
   display: flex;
+  display: none;
+
   align-items: center;
   gap: 24px;
 }
