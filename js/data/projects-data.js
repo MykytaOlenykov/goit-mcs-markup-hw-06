@@ -2,7 +2,10 @@ export const projectsData = [
   {
     id: 1,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-1.jpg",
+    imgUrl: {
+      small: "./images/projects/img-1@1x.jpg",
+      large: "./images/projects/img-1@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Banking App Interface Concept",
@@ -12,7 +15,10 @@ export const projectsData = [
   {
     id: 2,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-2.jpg",
+    imgUrl: {
+      small: "./images/projects/img-2@1x.jpg",
+      large: "./images/projects/img-2@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Cashless Payment",
@@ -22,7 +28,10 @@ export const projectsData = [
   {
     id: 3,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-3.jpg",
+    imgUrl: {
+      small: "./images/projects/img-3@1x.jpg",
+      large: "./images/projects/img-3@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Meditation App",
@@ -32,7 +41,10 @@ export const projectsData = [
   {
     id: 4,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-4.jpg",
+    imgUrl: {
+      small: "./images/projects/img-4@1x.jpg",
+      large: "./images/projects/img-4@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Taxi Service",
@@ -42,7 +54,10 @@ export const projectsData = [
   {
     id: 5,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-5.jpg",
+    imgUrl: {
+      small: "./images/projects/img-5@1x.jpg",
+      large: "./images/projects/img-5@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Screen Illustrations",
@@ -52,7 +67,10 @@ export const projectsData = [
   {
     id: 6,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-6.jpg",
+    imgUrl: {
+      small: "./images/projects/img-6@1x.jpg",
+      large: "./images/projects/img-6@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Online Courses",
@@ -62,7 +80,10 @@ export const projectsData = [
   {
     id: 7,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-7.jpg",
+    imgUrl: {
+      small: "./images/projects/img-7@1x.jpg",
+      large: "./images/projects/img-7@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Instagram Stories Concept",
@@ -72,7 +93,10 @@ export const projectsData = [
   {
     id: 8,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-8.jpg",
+    imgUrl: {
+      small: "./images/projects/img-8@1x.jpg",
+      large: "./images/projects/img-8@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Organic Food",
@@ -82,7 +106,10 @@ export const projectsData = [
   {
     id: 9,
     projectUrl: "#",
-    imgUrl: "./images/projects/img-9.jpg",
+    imgUrl: {
+      small: "./images/projects/img-9@1x.jpg",
+      large: "./images/projects/img-9@2x.jpg",
+    },
     description:
       "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App",
     title: "Fresh Coffee",

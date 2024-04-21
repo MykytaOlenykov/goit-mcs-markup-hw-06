@@ -1,7 +1,7 @@
 export function projectCardTemplate({
   id,
   projectUrl,
-  imgUrl,
+  imgUrl: { small, large },
   description,
   title,
   categoryLabel,
@@ -13,7 +13,11 @@ export function projectCardTemplate({
           <img
             class="projects-list__img"
             loading="lazy"
-            src="${imgUrl}"
+            srcset="
+              ${small} 1x,
+              ${large} 2x
+            "
+            src="${small}"
             alt="${title}"
           />
           <div class="project-overlay">
