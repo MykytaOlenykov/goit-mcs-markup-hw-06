@@ -9,9 +9,9 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle("menu-container--is-open");
 
   if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
     document.body.style.overflow = "auto";
+  } else {
+    document.body.style.overflow = "hidden";
   }
 };
 

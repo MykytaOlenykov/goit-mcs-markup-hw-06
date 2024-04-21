@@ -12,6 +12,7 @@ export function projectCardTemplate({
         <div class="projects-list__thumb">
           <img
             class="projects-list__img"
+            loading="lazy"
             src="${imgUrl}"
             alt="${title}"
           />
